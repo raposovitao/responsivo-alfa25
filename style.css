@@ -1,102 +1,190 @@
-body{
+body {
     background-color: #f4f4f4;
 }
-nav .menu{
+
+nav .menu {
     display: none;
 }
-nav:hover .menu{
+
+nav:hover .menu {
     display: block;
 }
-a{
+
+a {
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
 }
-header{
+
+header {
     background-color: #4d4d4d;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-nav{
+
+nav {
     padding: 20px 10px;
 }
-nav a{
+
+nav a {
     color: #fff;
     font-size: 18px;
 }
-.content{
+
+.content {
     padding: 10px;
 }
-h2{
+
+h2 {
     color: #4d4d4d;
     padding: 20px 0;
 }
-.texto p, .item p{
+
+.texto p,
+.item p {
     text-align: justify;
     line-height: 20px;
     padding: 20px 0;
 }
-.cta-btn{
+
+.cta-btn {
     background-color: #4d4d4d;
     padding: 10px 20px;
     border-radius: 10px;
     display: inline-block;
 }
-.cta-btn a{
+
+.cta-btn a {
     color: #fff;
 }
+
 .missao,
 .visao,
-.valores{
+.valores {
     background-color: #ececec;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
 }
-#servicos{
+
+#servicos {
     background-color: #4d4d4d;
 }
-#servicos h2{
+
+#servicos h2 {
     color: #fff;
 }
-#servicos .item{
+
+#servicos .item {
     width: 47%;
     display: inline-block;
     text-align: center;
     padding: 1%;
-    font-size: 14}
-    #profissionais .item{
-        background-color: #ececec;
-        padding: 20px 0;
-        margin: 20px 0;
-        text-align: center;
+    font-size: 14
+}
+
+#profissionais .item {
+    background-color: #ececec;
+    padding: 20px 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#profissionais .imagem {
+    background-color: #4d4d4d;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#contato label {
+    width: 100%;
+    display: block;
+}
+
+#contato input {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #4d4d4d;
+    padding: 50px 0;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+}
+
+Footer h2 {
+    padding: 20px 0;
+    color: #fff;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+@media (min-width:680px) {
+    .menu-mobile {
+        display: none;
     }
-    #profissionais .imagem{
-        background-color: #4d4d4d;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-        border-radius: 200px;
-        margin-bottom: 20px;
-    }
-    #contato label{
-        width: 100%;
+
+    .menu-desktop {
         display: block;
     }
-    #contato input{
-        width: 100%;
-        font-size: 20px;
-        padding: 10px 0;
-        margin-top: 10px;
-        margin-bottom: 20px;
+
+    .menu-open li {
+        display: inline;
+        padding: 0 20px;
     }
-    footer{
-        background-color: #4d4d4d;
-        padding: 50px 0;
-        font-size: 20px;
-        line-height: 20px;
-        color: #fff;
+
+    .menu-open {
+        display: inline;
     }
+
+    .item {
+        width: 29% !important;
+        padding: 1%;
+        margin: 1%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+.chat{
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    right: 20%;
+    background-color: #075e54;
+    width: 165px;
+    border-radius: 15px;
+    padding: 5px;
+}
+.chat a{
+    color: #fff;
+}
+.chat i{
+    font-size: 40px;
+}
+.chat span{
+    float: left;
+    padding: 0 10px;
+    text-align: center;
+}
+.slider {
+    height: 10px;
+    background: url(slider.jpg)
+    50% 95px / cover no-repeat fixed;
+;
+}

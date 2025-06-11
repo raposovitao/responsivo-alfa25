@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Rouge+Script&display=swap');
 body {
     background-color: #f4f4f4;
+    font-family: "Lora", serif;
 }
 
 nav .menu {
@@ -33,27 +35,27 @@ nav {
 
 nav a {
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
 }
 
-.content {
+content {
     padding: 10px;
+    font-size: 22px;
 }
 
 h2 {
     color: #4d4d4d;
-    padding: 20px 0;
 }
 
 .texto p,
 .item p {
     text-align: justify;
     line-height: 20px;
-    padding: 20px 0;
+    padding: 20px 10px;
 }
 
 .cta-btn {
-    background-color: #4d4d4d;
+    background-color: #4e4e4e;
     padding: 10px 20px;
     border-radius: 10px;
     display: inline-block;
@@ -81,16 +83,16 @@ h2 {
 }
 
 #servicos .item {
-    width: 47%;
+    width: 45%;
     display: inline-block;
     text-align: center;
     padding: 1%;
-    font-size: 14
+    font-size: 14px;
 }
 
 #profissionais .item {
     background-color: #ececec;
-    padding: 20px 0;
+    padding: 20px;
     margin: 20px 0;
     text-align: center;
 }
@@ -114,7 +116,7 @@ h2 {
     width: 100%;
     font-size: 20px;
     padding: 10px 0;
-    margin-top: 10px;
+    margin-top: 10px 0;
     margin-bottom: 20px;
 }
 
@@ -122,26 +124,63 @@ footer {
     background-color: #4d4d4d;
     padding: 50px 0;
     font-size: 20px;
-    line-height: 20px;
     color: #fff;
 }
 
-Footer h2 {
-    padding: 20px 0;
+nav .fa-bars {
+    float: right;
+}
+
+#servicos i {
+    font-size: 40px;
     color: #fff;
+    padding-top: 20px;
+}
+
+#servicos {
+    padding: 40px 0;
+}
+
+footer h2 {
+    color: #fff;
+    margin: 20px;
 }
 
 .menu-desktop {
     display: none;
 }
-
-@media (min-width:680px) {
+.page #servicos h2{
+    background-color:#f4f4f4;
+    color: #4d4d4d;
+}
+.page #servicos,.page #servicos i{
+    color: #4d4d4d;
+}
+a{
+    opacity: 1;
+    transition: 0.5s;
+}
+a:hover{
+    opacity: 0.3;
+    transition: 0.5s;
+}
+@media(min-width:680px) {
+    .content.page p{
+        width: 60%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .content.page img{
+        width: 30%;
+        font-display: inline-block;
+    }
     .menu-mobile {
         display: none;
     }
 
     .menu-desktop {
         display: block;
+        color: #fff;
     }
 
     .menu-open li {
@@ -154,37 +193,44 @@ Footer h2 {
     }
 
     .item {
-        width: 29% !important;
+        width: 28% !important;
         padding: 1%;
         margin: 1%;
         display: inline-block;
         vertical-align: top;
     }
 }
-.chat{
+
+.title {
+    text-align: center;
+}
+
+.chat {
     position: fixed;
     z-index: 999;
     bottom: 30px;
-    right: 20%;
+    right: 20px;
     background-color: #075e54;
-    width: 165px;
+    width: 35px;
     border-radius: 15px;
     padding: 5px;
 }
-.chat a{
+
+.chat a {
     color: #fff;
 }
-.chat i{
+
+.chat i {
     font-size: 40px;
 }
-.chat span{
-    float: left;
-    padding: 0 10px;
-    text-align: center;
-}
+
 .slider {
-    height: 10px;
-    background: url(slider.jpg)
-    50% 95px / cover no-repeat fixed;
-;
+    height: 350px;
+    background: url(img/banner.jpg) 100% -395px / cover no-repeat fixed;
+    ;
+}
+
+.content.page img{
+    width: 100%;
+    margin-top: 10px;
 }
